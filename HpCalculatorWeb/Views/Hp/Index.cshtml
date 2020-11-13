@@ -2,11 +2,17 @@
     ViewData["Title"] = "Home Page";
 }
 <script src="~/js/site.js"></script>
+<link rel="stylesheet" href="~/css/site.css" type="text/css" />
+
 <div class="text-center">
     <h1 class="display-4">HP Calculator</h1>
     <form method='post' action='/hp'>
-        @Html.DropDownList("MyLevel", (IEnumerable<SelectListItem>)ViewData["MyList"], "Level")
+        <div class="quantity" id="quantity">
+            <input type="number" min="1" max="20" step="1" value="MyLevel" name="MyLevel">
+        </div>
+        <div class="myClass" id="myClas">           
 
+        </div>
         <input type='submit' value='Calculate Hp' />
     </form>
 </div>

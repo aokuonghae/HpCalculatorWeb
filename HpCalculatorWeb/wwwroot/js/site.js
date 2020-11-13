@@ -15,4 +15,3 @@ window.addEventListener("DOMContentLoaded", function () {
         i === 1 ? theOption.selected = "selected" : "";
         ddl.options[i] = theOption;
     }
-});
